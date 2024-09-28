@@ -1,54 +1,214 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Web Portofolio Tailwind CSS">
-    <meta name="keyword" content="tailwindcss, CSS, tailwind">
-    <meta name="author" content="Eri Maulana">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Web Portofolio Tailwind CSS" />
+    <meta name="keyword" content="tailwindcss, CSS, tailwind" />
+    <meta name="author" content="Eri Maulana" />
     <title>Portofolio-Tailwind CSS</title>
-    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
-</head>
-<body>
-    <section class="w-screen mx-auto px-4 h-8">
-        <nav class="flex flex-wrap p-6 justify-between">
-            <!-- logo -->
-            <div class="flex flex-shrink-0 mr-6">
-                <img src="img/logo.png" alt="Logo" class="h-10 w-50 mr-2">
-            </div>
-            <!-- logo end -->
+    <link
+      href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    
 
-            <!-- burger menu -->
-                <div class="block lg:hidden">
-                    <a href="" class="flex items-center px-3 py-2 rounded border border-indigo-400 text-indigo-500 hover:text-indigo-700 hover:border-indigo-700">
-                        <svg class="fill-current h-3 w-3" viewBox="0 0 20 20" xmlns="http://www.we.org/2000/svg"><title>Menu</title><path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"/></svg>
-                    </a>
-                </div>
-            <!-- burger menu end -->
+    <style>
+      .gradient {
+        background-image: linear-gradient(to bottom right, #000000, #fa0ada);
+      }
+    </style>
+  </head>
+  <body class="">
+    <!-- Navigasi Bar -->
+    <section class="w-screen mx-auto mb-16 h-8 bg-transparent">
+      <nav class="flex flex-wrap p-6 justify-between">
+        <!-- logo -->
+        <div class="flex flex-shrink-0 mr-6">
+          <img src="img/logo.png" alt="Logo" class="h-10 w-50 mr-2" />
+        </div>
+        <!-- logo end -->
 
-            <!-- nav item -->
-                <div class="w-full block flex-grow lg:items-center lg:w-auto">
-                    <div class="text-sm lg:flex-grow">
-                        <a href="#about" class="block mt-4  lg:inline-block lg:mt-0 text-gray-600 hover:text-gray-900 text-lg mr-4">About Me</a>
-                        <a href="#recent" class="block mt-4  lg:inline-block lg:mt-0  text-gray-600 hover:text-gray-900 text-lg mr-4">Recent Work</a>
-                        <a href="#skill" class="block mt-4  lg:inline-block lg:mt-0  text-gray-600 hover:text-gray-900 text-lg mr-4">Framework Skill</a>
-                        <a href="#contact" class="block mt-4  lg:inline-block lg:mt-0  text-gray-600 hover:text-gray-900 text-lg mr-4">Contact Me</a>
+        <!-- burger menu -->
+        <div class="block lg:hidden">
+          <a
+            href=""
+            class="flex items-center px-3 py-2 rounded border border-indigo-400 text-indigo-500 hover:text-indigo-700 hover:border-indigo-700"
+          >
+            <svg
+              class="fill-current h-3 w-3"
+              viewBox="0 0 20 20"
+              xmlns="http://www.we.org/2000/svg"
+            >
+              <title>Menu</title>
+              <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" />
+            </svg>
+          </a>
+        </div>
+        <!-- burger menu end -->
 
-                    </div>
-                </div>
-            <!-- nav item end -->
+        <!-- nav item -->
+        <div class="w-full block flex-grow lg:items-center lg:w-auto">
+          <div class="text-sm lg:flex-grow">
+            <a
+              href="#about"
+              class="block mt-4 lg:inline-block lg:mt-2 text-gray-600 hover:text-gray-900 text-lg mr-4"
+              >About Me</a
+            >
+            <a
+              href="#recent"
+              class="block mt-4 lg:inline-block lg:mt-0 text-gray-600 hover:text-gray-900 text-lg mr-4"
+              >Recent Work</a
+            >
+            <a
+              href="#skill"
+              class="block mt-4 lg:inline-block lg:mt-0 text-gray-600 hover:text-gray-900 text-lg mr-4"
+              >Framework Skill</a
+            >
+            <a
+              href="#contact"
+              class="block mt-4 lg:inline-block lg:mt-0 text-gray-600 hover:text-gray-900 text-lg mr-4"
+              >Contact Me</a
+            >
+          </div>
+        </div>
+        <!-- nav item end -->
 
-             <!-- nav button -->
-              <div>
-                <a href="#" class="inline-block text-sm px-4 py-2 rounded text-gray-600  border border-gray-600 hover:border-transparent hover:text-white hover:bg-indigo-700 mt-4 lg:mt-0">Contact Me</a>
-              </div>
-             <!-- nav button end -->
-        </nav>
+        <!-- nav button -->
+        <div class="">
+          <a
+            href="#"
+            class="inline-block text-md px-4 py-2 rounded text-gray-600 border border-gray-600 hover:border-transparent hover:text-white hover:bg-indigo-700 mt-4 lg:mt-0"
+            >Contact Me</a
+          >
+        </div>
+        <!-- nav button end -->
+      </nav>
     </section>
-    <section class="w-screen mx-auto py-8  h-32">About Me</section>
-    <section class="w-screen mx-auto py-4 bg-white h-32">Skill Framework</section>
-    <section class="w-screen mx-auto py-4  h-32">Recent Work</section>
-    <section class="w-screen mx-auto py-4  h-32">Contact Me</section>
+    <!-- Navigasi Bar End -->
+
+    <!-- About Me -->
+    <section id="about" class="w-screen mx-auto py-4 gradient">
+      <div class="px-16 py-8 text-center text-white">
+        <h1 class="w-full text-5xl font-bold">About Me</h1>
+        <div class="mb-4">
+          <div
+            class="bg-pink-500 w-2/3 md:w-1/6 opacity-75 rounded h-1 mx-auto"
+          ></div>
+        </div>
+        <h2 class="text-3xl font-bold mb-2">
+          Hai, Saya Anonymous. Senang Berjumpa dengan Anda.
+        </h2>
+        <h3 class="text-lg mb-2">
+          Saya adalah seorang Web Developer yang sangat pasif dan berfikir
+          sangat luas. Saya sangat senang membangun dan mengembangkan website
+          yang indah dan user-friendly.
+        </h3>
+        <div class="w-full">
+          <div class="px-4 py-4 overflow-hidden">
+            <img
+              src="img/kecil.png"
+              alt="Foto Profil"
+              class="hover:scale-100 ease-in duration-150 shadow-lg rounded-full max-w-full mx-auto w-48"
+            />
+          </div>
+        </div>
+      </div>
+
+      <!-- box portofolio -->
+      <div
+        class="grid grid-cols-1 md:grid-cols-3 bg-white py-4 px-4 md:py-8 m-16 rounded-xl"
+      >
+        <div class="max-w-sm shadow-lg p-4 bg-white m-3 text-center">
+          <i class="fas fa-laptop-code fa-5x text-red-500 mb-6"></i>
+          <div class="p-4">
+            <p class="font-bold text-lg md:text-xl mb-6">Programming</p>
+            <p class="text-gray-600 text-base mb-2">JavaScript</p>
+            <hr class="text-gray-600 mb-2" />
+            <p class="text-gray-600 text-base mb-2">PHP</p>
+            <hr class="text-gray-600 mb-2" />
+            <p class="text-gray-600 text-base mb-2">C++</p>
+            <hr class="text-gray-600 mb-2" />
+            <p class="text-gray-600 text-base mb-2">Java</p>
+            <hr class="text-gray-600 mb-2" />
+          </div>
+          <div class="px-2 py-4">
+            <button
+              class="bg-gray-500 giver:bg-gray-700 text-white font-bold px-4 py-2 shadow-lg rounded-tl-lg rounded-br-lg"
+            >
+              Lihat Portofolio
+            </button>
+          </div>
+        </div>
+        <div class="max-w-sm shadow-lg p-4 bg-white m-3 text-center">
+          <i class="fa-solid fa-pencil fa-5x text-yellow-500 mb-6"></i>
+          <div class="p-4">
+            <p class="font-bold text-lg md:text-xl mb-6">Desaign</p>
+            <p class="text-gray-600 text-base mb-2">Canva</p>
+            <hr class="text-gray-600 mb-2" />
+            <p class="text-gray-600 text-base mb-2">Figma</p>
+            <hr class="text-gray-600 mb-2" />
+            <p class="text-gray-600 text-base mb-2">PhotoShop</p>
+            <hr class="text-gray-600 mb-2" />
+            <p class="text-gray-600 text-base mb-2">CSS</p>
+            <hr class="text-gray-600 mb-2" />
+          </div>
+          <div class="px-2 py-4">
+            <button
+              class="bg-gray-500 giver:bg-gray-700 text-white font-bold px-4 py-2 shadow-lg rounded-tl-lg rounded-tr-lg"
+            >
+              Lihat Portofolio
+            </button>
+          </div>
+        </div>
+        <div class="max-w-sm shadow-lg p-4 bg-white m-3 text-center">
+          <i class="fas fa-database fa-5x text-green-500 mb-6"></i>
+          <div class="p-4">
+            <p class="font-bold text-lg md:text-xl mb-6">Database</p>
+            <p class="text-gray-600 text-base mb-2">MySQL</p>
+            <hr class="text-gray-600 mb-2" />
+            <p class="text-gray-600 text-base mb-2">SqlLite</p>
+            <hr class="text-gray-600 mb-2" />
+            <p class="text-gray-600 text-base mb-2">PostgreSQL</p>
+            <hr class="text-gray-600 mb-2" />
+            <p class="text-gray-600 text-base mb-2">MongoDB</p>
+            <hr class="text-gray-600 mb-2" />
+          </div>
+          <div class="px-2 py-4">
+            <button
+              class="bg-gray-500 giver:bg-gray-700 text-white font-bold px-4 py-2 shadow-lg rounded-tr-lg rounded-bl-lg"
+            >
+              Lihat Portofolio
+            </button>
+          </div>
+        </div>
+      </div>
+      <!-- box portofolio end -->
+    </section>
+    <!-- About Me End -->
+
+    <!-- Skill Framework -->
+    <section class="w-screen mx-auto py-4 bg-white h-32">
+      Skill Framework
+    </section>
+    <!-- Skill Framework End -->
+
+    <!-- Recent Work -->
+    <section class="w-screen mx-auto py-4 h-32">Recent Work</section>
+    <!-- Recent Work End -->
+
+    <!-- Contact Me -->
+    <section class="w-screen mx-auto py-4 h-32">Contact Me</section>
+    <!-- Contact Me End -->
+
+    <!-- Footer -->
     <section class="w-screen mx-auto py-4 bg-white h-32">Footer</section>
-</body>
+    <!-- Footer End -->
+
+    <!-- fontawesome -->
+    <script
+      src="https://kit.fontawesome.com/2e9f86bd4d.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
