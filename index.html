@@ -25,6 +25,16 @@
       .gradient-skill {
         background-image: linear-gradient(to bottom right, #000000, #fa0ada);
       }
+      .gradient-bottom {
+        background-image: linear-gradient( #4c51bf, #702459);
+      }
+      .button{
+        background-image: linear-gradient(to bottom right, #fa0ada, #000000);
+      }
+      .button:hover {
+        background-image: linear-gradient(to bottom right, #000000, #fa0ada);
+        color: #ffffff;
+      }
     </style>
   </head>
   <body class="overflow-x-hidden">
@@ -79,7 +89,7 @@
         <div>
           <a
             href="#"
-            class="inline-block text-sm px-4 py-2 rounded text-gray-600 border border-gray-600 hover:border-transparent hover:text-white hover:bg-indigo-700 mt-4 lg:mt-0"
+            class="inline-block text-sm px-4 py-2 rounded text-white button mt-4 lg:mt-0"
           >
             Contact me
           </a>
@@ -135,7 +145,7 @@
           </div>
           <div class="px-2 py-4">
             <button
-              class="bg-gray-500 giver:bg-gray-700 text-white font-bold px-4 py-2 shadow-lg rounded-tl-lg rounded-br-lg"
+              class="text-white font-bold px-4 py-2 shadow-lg rounded-tl-lg rounded-br-lg button"
             >
               Lihat Portofolio
             </button>
@@ -156,7 +166,7 @@
           </div>
           <div class="px-2 py-4">
             <button
-              class="bg-gray-500 giver:bg-gray-700 text-white font-bold px-4 py-2 shadow-lg rounded-tl-lg rounded-tr-lg"
+              class=" text-white font-bold px-4 py-2 shadow-lg rounded-tl-lg rounded-tr-lg button"
             >
               Lihat Portofolio
             </button>
@@ -177,7 +187,7 @@
           </div>
           <div class="px-2 py-4">
             <button
-              class="bg-gray-500 giver:bg-gray-700 text-white font-bold px-4 py-2 shadow-lg rounded-tr-lg rounded-bl-lg"
+              class=" text-white font-bold px-4 py-2 shadow-lg rounded-tr-lg rounded-bl-lg button"
             >
               Lihat Portofolio
             </button>
@@ -267,7 +277,7 @@
           </div>
           <div class="px-2 py-4 text-center">
             <button
-              class="bg-gray-500 hover:bg-gray-700 text-white font-bold px-4 py-2 shadow-md rounded-tr-lg rounded-bl-lg"
+              class="text-white font-bold px-4 py-2 shadow-md rounded-tr-lg rounded-bl-lg button"
             >
               Detail
             </button>
@@ -289,7 +299,7 @@
           </div>
           <div class="px-2 py-4 text-center">
             <button
-              class="bg-gray-500 hover:bg-gray-700 text-white font-bold px-4 py-2 shadow-md rounded-tr-lg rounded-bl-lg"
+              class=" text-white font-bold px-4 py-2 shadow-md rounded-tr-lg rounded-bl-lg button"
             >
               Detail
             </button>
@@ -311,7 +321,7 @@
           </div>
           <div class="px-2 py-4 text-center">
             <button
-              class="bg-gray-500 hover:bg-gray-700 text-white font-bold px-4 py-2 shadow-md rounded-tr-lg rounded-bl-lg"
+              class=" text-white font-bold px-4 py-2 shadow-md rounded-tr-lg rounded-bl-lg button"
             >
               Detail
             </button>
@@ -333,7 +343,7 @@
           </div>
           <div class="px-2 py-4 text-center">
             <button
-              class="bg-gray-500 hover:bg-gray-700 text-white font-bold px-4 py-2 shadow-md rounded-tr-lg rounded-bl-lg"
+              class="text-white font-bold px-4 py-2 shadow-md rounded-tr-lg rounded-bl-lg button"
             >
               Detail
             </button>
@@ -345,7 +355,33 @@
     <!-- Recent Work End -->
 
     <!-- Contact Me -->
-    <section class="w-screen mx-auto py-4 h-32">Contact Me</section>
+    <section class="w-screen mx-auto py-4 gradient">
+        <h1 class="w-full my-2 text-5xl font-bold text-center text-white">Hubungi Kami</h1>
+        <div class="mb-4">
+            <div class="h-1 mx-auto bg-pink-500 w-1/4 opacity-75 my-4 py-0 rounded-xl"></div>
+        </div>
+        <div class="container p-4 mb-6 w-full lg:w-1/2 shadow-xl rounded-xl bg-gray-200 mx-auto">
+            <form action="" class="p-5 lg:p-10 text-center">
+                <h4 class="text-2xl font-semibold">Ingin Menghubungi Kami?</h4>
+                <p class="mt-1 mb-4 text-gray-600">Silahkan kirim pesan.</p>
+                <div class="w-full mb-4 mt-8">
+                    <label for="nama" class="uppercase text-gray-600 text-xs font-bold ">Nama Lengkap </label>
+                    <input id="nama" class="mt-2 px-3 w-full py-3 placeholder-gray-300 text-gray-600 bg-white rounded-lg text-sm shadow-lg" placeholder="Nama lengkap" type="text">
+                </div>
+                <div class="w-full mb-4 mt-4">
+                    <label for="email" class="uppercase text-gray-600 text-xs font-bold ">Email </label>
+                    <input id="email" class="mt-2 px-3 w-full py-3 placeholder-gray-300 text-gray-600 bg-white rounded-lg text-sm shadow-lg" placeholder="Email" type="text">
+                </div>
+                <div class="w-full mb-4 mt-4">
+                    <label for="email" class="uppercase text-gray-600 text-xs font-bold ">Pesan </label>
+                    <textarea name="" id="pesan" class="mt-2 px-3 w-full py-3 placeholder-gray-300 text-gray-600 bg-white rounded-lg text-sm shadow-lg" rows="4" cols="80" placeholder="Tuliskan pesan disini.."></textarea>
+                </div>
+                <div class="mt-6">
+                    <button class="button text-white text-sm font-bold uppercase px-6 py-3 rounded-xl shadow-lg ">Kirim Pesan</button>
+                </div>
+            </form>
+        </div>
+    </section>
     <!-- Contact Me End -->
 
     <!-- Footer -->
